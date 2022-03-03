@@ -1,29 +1,55 @@
 *{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
-#programmer img{
-    width: auto;
+#points{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#pointDiv{
+    margin-top: 10vh;
+    font-size: 2em;
+    text-align: center;
+    color: rgba(35, 180, 199, 1);
+}
+
+#programmer{
+    width: 120px;
     height: 100px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 45.5vw;
 }
 
-.enemy{
+
+#leftEnemy{
     width: 100px;
     height: 100px;
-    background-color: red;
+    background-color: rgb(31, 154, 170);
+    color: white;
     position: absolute;
     top: 40%;
     left: 0;
-}
-
-.enemy{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#rightEnemy{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(31, 154, 170);
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enemy{
     cursor:move;
 }

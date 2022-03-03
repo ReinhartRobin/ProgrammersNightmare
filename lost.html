@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programmers Nightmare</title>
-  <link rel="stylesheet" href="./styles/start.css">
-  <script src="./scripts/game.js"></script>
+  <title>Too bad!</title>
+  <link rel="stylesheet" href="./styles/finish.css">
+  <script src="./scripts/game.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@600&display=swap"
@@ -17,11 +17,15 @@
 <body>
   <div class="container">
     <div class="Headline">
-      <h1>A Programmers Nightmare</h1>
+      <h1>AN ERROR OCCURRED</h1>
     </div>
-    <div class="startContent">
+    <div class="finishContent">
+      <h2 id="finishMessage">You saved the programmer from 0 bugs</h2>
+      <div class="btn btn-three" onclick="setDifficulty()">
+        <span>PLAY AGAIN</span>
+      </div>
       <div class="btn btn-three" onclick="start()">
-        <span>PLAY</span>
+        <span>CHANGE DIFFICULTY</span>
       </div>
     </div>
   </div>

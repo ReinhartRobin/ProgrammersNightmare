@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programmers Nightmare</title>
     <link rel="stylesheet" href="./styles/game.css">
-    <script src="./scripts/configureGame.js" defer></script>
     <script src="./scripts/game.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div onmousedown="move()" class="enemy">
-        <h1>404</h1>
+    <div id="pointDiv">
+        <h1 id="points">AVOIDED ERRORS: 0</h1>
     </div>
 
-    <div id="programmer">
-        <img src="./images/programmer.gif">
+    <div id="leftEnemy" onmousedown="move(0)">
+        <h1 class="enemyContent">404</h1>
+    </div>
+    <div id="rightEnemy" onmousedown="move(1)">
+        <h1 class="enemyContent">500</h1>
+    </div>
+
+    <div>
+        <img id="programmer" src="./images/programmer.gif">
     </div>
 </body>
+
 </html>

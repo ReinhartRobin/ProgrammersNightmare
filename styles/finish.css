@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
 }
+
 
 .container {
     width: 100vw;
@@ -14,35 +14,36 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
+        "Headline"
+        "Headline"
+        "finishContent"
         "."
-        "easy"
-        "medium"
-        "hard"
         ".";
 }
 
-.easy {
-    grid-area: easy;
+.Headline {
+    grid-area: Headline;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(35, 180, 199);
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.medium {
-    grid-area: medium;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.finishContent {
+    width: 50vw;
+    height: auto;
+    grid-area: finishContent;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.hard {
-    grid-area: hard;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h2{
+    font-size: 2em;
+    margin-bottom: 5vh;
+    font-family: 'Montserrat', sans-serif;
 }
-
-
 
 .btn {
     line-height: 50px;
@@ -50,16 +51,18 @@
     text-align: center;
     width: 250px;
     cursor: pointer;
-}
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2vh;
+  }
 
-.btn-three {
+  .btn-three {
     color: rgb(255, 255, 255);
     transition: all 0.5s;
     position: relative;
     background-color: rgb(35, 180, 199);
-}
-
-.btn-three::before {
+  }
+  .btn-three::before {
     content: '';
     position: absolute;
     top: 0;
@@ -69,9 +72,8 @@
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.055);
     transition: all 0.3s;
-}
-
-.btn-three:hover::before {
-    opacity: 0;
-    transform: scale(0.5, 0.5);
-}
+  }
+  .btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
