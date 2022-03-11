@@ -150,6 +150,19 @@ function getRandomRange(enemyIndex) {
 }
 
 function lostGame() {
-  location.href = "./lost.html";
-  document.getElementById("finishMessage").innerText = "test";
+  document.getElementById("body").innerHTML = ` 
+  <div class="container">
+  <div class="Headline">
+    <h1>AN ERROR OCCURRED</h1>
+  </div>
+  <div class="finishContent">
+    <h2 id="finishMessage">You saved the programmer from 0 bugs</h2>
+    <div class="btn btn-three" onclick="setDifficulty()">
+      <span>PLAY AGAIN</span>
+    </div>
+    <div class="btn btn-three" onclick="start()">
+      <span>CHANGE DIFFICULTY</span>
+    </div>
+  </div>
+</div>`;
 }
